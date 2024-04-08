@@ -3,19 +3,16 @@ import { createTheme } from "@mui/material/styles";
 // Cores da paleta fornecida
 const colors = {
   paleWhite: "#FAFAFF",
-  oliveGreen: "#7D7A4D",
-  mossGreen: "#3E4A1B",
-  cream: "#EBDAA8",
-  darkBeige: "#B2935B",
-  darkGreen: "#313B13",
-  offWhite: "#E6E4BE",
-  darkRed: "#AF1212",
+  oliveGreen: "#878654",
+  darkGreen: "#38431D",
+  cream: "#FEFADB",
+  darkRed: "#B2231A",
 };
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: colors.mossGreen, // Considerado como a cor primária
+      main: colors.darkGreen, // Considerado como a cor primária
     },
     secondary: {
       main: colors.cream, // Considerado como a cor secundária
@@ -32,7 +29,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Afterglow", "Helvetica", "Arial", sans-serif',
     h1: {
       fontSize: "2.2rem",
     },

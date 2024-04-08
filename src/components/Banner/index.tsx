@@ -8,7 +8,11 @@ import {
 } from "@mui/material";
 import backgroundImage from "../../assets/images/bannerAncestral.png";
 
-const Banner: React.FC = () => {
+type BannerProps = {
+  onVitrineClick: () => void;
+};
+
+const Banner: React.FC<BannerProps> = ({ onVitrineClick }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -44,7 +48,12 @@ const Banner: React.FC = () => {
       >
         Desperte a força do seu Lar Ancestral
       </Typography>
-      <Button variant="outlined" size="large" sx={{ px: 10 }}>
+      <Button
+        variant="outlined"
+        size="large"
+        sx={{ px: 10 }}
+        onClick={onVitrineClick}
+      >
         Conheça nossos produtos
       </Button>
     </Box>

@@ -14,3 +14,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Afterglow';
+  src: url('../src/assets/fonts/Afterglow-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

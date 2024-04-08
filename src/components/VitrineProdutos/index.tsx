@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import { Paper, Typography, Box, useTheme, Modal } from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import luaCheia from "../../assets/images/luacheia.png";
-import luaMinguante from "../../assets/images/luaminguante.png";
-import luaNova from "../../assets/images/luanova.png";
-import luaCrescente from "../../assets/images/luacrescente.png";
+import luaCheia from "../../assets/images/LuaCheia.jpeg";
+import luaMinguante from "../../assets/images/LuaMinguante.jpeg";
+import luaNova from "../../assets/images/LuaNova.jpeg";
+import luaCrescente from "../../assets/images/LuaCrescente.jpeg";
 import backgroundImage from "../../assets/images/vitrineBackground.png";
 
 interface Product {
@@ -20,28 +20,28 @@ const products: Product[] = [
   {
     name: "Lua Cheia - Banho de Ervas",
     description:
-      "Celebre a plenitude e o ápice das energias. Ingredientes: Arruda, Guiné, Alfazema, Eucalipto, Ipê Roxo. Peso: 20g.",
+      "O banho de ervas quatro luas celebra a harmonia entre você e a energia lunar, proporcionando uma experiência única de bem-estar. Ingredientes: Sal Rosa, Sal Amargo, Hortelã, Limão Siciliano, Café, Eucalipto. Peso: 160g.",
     imageUrl: luaCheia, // Substitua pelo caminho correto da imagem
     phase: "Lua Cheia",
   },
   {
     name: "Lua Minguante - Banho de Ervas",
     description:
-      "Favorece a introspecção e a cura. Ingredientes: Arruda, Guiné, Alfazema, Eucalipto, Ipê Roxo. Peso: 20g.",
+      "O banho de ervas quatro luas celebra a harmonia entre você e a energia lunar, proporcionando uma experiência única de bem-estar. Favorece a introspecção e a cura. Ingredientes: Sal Rosa, Sal Amargo, Arruda, Sálvia, Manjericão, Gengibre. Peso: 160g.",
     imageUrl: luaMinguante, // Substitua pelo caminho correto da imagem
     phase: "Lua Minguante",
   },
   {
     name: "Lua Nova - Banho de Ervas",
     description:
-      "Ideal para recomeços e novas intenções. Ingredientes: Arruda, Guiné, Alfazema, Eucalipto, Ipê Roxo. Peso: 20g.",
+      "O banho de ervas quatro luas celebra a harmonia entre você e a energia lunar, proporcionando uma experiência única de bem-estar. Ideal para recomeços e novas intenções. Ingredientes: Sal Rosa, Sal Amargo, Cedro, Camomila, Lavanda. Peso: 160g.",
     imageUrl: luaNova, // Substitua pelo caminho correto da imagem
     phase: "Lua Nova",
   },
   {
     name: "Lua Crescente - Banho de Ervas",
     description:
-      "Aumenta a energia vital e a motivação. Ingredientes: Arruda, Guiné, Alfazema, Eucalipto, Ipê Roxo. Peso: 20g.",
+      "O banho de ervas quatro luas celebra a harmonia entre você e a energia lunar, proporcionando uma experiência única de bem-estar. Aumenta a energia vital e a motivação. Ingredientes: Sal Rosa, Sal Amargo, Canela, Laranjeira, Menta. Peso: 160g.",
     imageUrl: luaCrescente, // Substitua pelo caminho correto da imagem
     phase: "Lua Crescente",
   },
@@ -90,7 +90,7 @@ const VitrineProdutos: React.FC = () => {
       <Box
         sx={{
           padding: 4,
-          minHeight: `80vh`,
+          minHeight: `100vh`,
           bgcolor: theme.palette.error.main,
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
@@ -121,8 +121,8 @@ const VitrineProdutos: React.FC = () => {
                 <Paper
                   elevation={3}
                   sx={{
-                    height: 420,
-                    width: 320,
+                    height: 620,
+                    width: 420,
                     padding: 4,
                     bgcolor: theme.palette.background.default,
                     display: "flex",
@@ -142,13 +142,13 @@ const VitrineProdutos: React.FC = () => {
                     alt={product.name}
                     style={{
                       width: "auto",
-                      height: 100,
+                      height: 320,
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto",
                     }}
                   />
-                  <Typography sx={{ mt: 1, textAlign: "center" }} variant="h6">
+                  <Typography sx={{ mt: 2, textAlign: "center" }} variant="h6">
                     {product.name}
                   </Typography>
                   <Typography
@@ -157,7 +157,6 @@ const VitrineProdutos: React.FC = () => {
                   >
                     {product.description}
                   </Typography>
-                  {/* Outros detalhes do produto */}
                 </Paper>
               </Box>
             ))}

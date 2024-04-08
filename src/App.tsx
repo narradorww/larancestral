@@ -7,7 +7,8 @@ import Idealizadoras from "./components/Idealizadoras";
 import VitrineProdutos from "./components/VitrineProdutos";
 import BeneficiosPraticas from "./components/BeneficiosPraticas";
 import ComoAdquirir from "./components/ComoAdquirir";
-// Importe outros componentes de página conforme você os cria
+import Produtos from "./components/Produtos";
+import DetalhesProduto from "./components/DetalhesProduto";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,8 @@ const App: React.FC = () => {
           <Route path="/vitrine" element={<VitrineProdutos />} />
           <Route path="/beneficiospraticas" element={<BeneficiosPraticas />} />
           <Route path="/comoadquirir" element={<ComoAdquirir />} />
+          <Route path="/produtos" element={<Produtos />} />
+          <Route path="/produtos/:slug" element={<DetalhesProduto />} />
           <Route path="*" element={<h1>404 - Página não encontrada</h1>} />
         </Routes>
       </Router>

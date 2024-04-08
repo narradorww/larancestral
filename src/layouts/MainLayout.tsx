@@ -8,6 +8,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+import logo from "../assets/images/marca-horizontal-preto.png";
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -22,9 +23,11 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       <CssBaseline />
       <AppBar position="fixed" color="secondary">
         <Toolbar>
-          <Typography variant="h6" component="div">
-            Lar Ancestral
-          </Typography>
+          <img
+            src={logo}
+            alt="Lar Ancestral"
+            style={{ marginRight: 10, height: "100px" }}
+          />
         </Toolbar>
       </AppBar>
 
